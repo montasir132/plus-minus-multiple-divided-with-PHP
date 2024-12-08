@@ -1,16 +1,29 @@
 <?php
 $number3 = null;
 
-if(isset($_POST['submit'])){
+if(isset($_POST['addition'])){
 
   $number1= $_POST['1st_number'];
   $number2= $_POST['2nd_number'];
   $number3= $number2 + $number1;
 
-}else{
+}elseif(isset($_POST['subtraction'])){
 
+  $number1= $_POST['1st_number'];
+  $number2= $_POST['2nd_number'];
+  $number3= $number1 - $number2;
+
+}elseif(isset($_POST['multiply'])){
+
+  $number1= $_POST['1st_number'];
+  $number2= $_POST['2nd_number'];
+  $number3= $number1 * $number2;
+
+}elseif(isset($_POST['divide'])){
+  $number1= $_POST['1st_number'];
+  $number2= $_POST['2nd_number'];
+  $number3= $number1 / $number2;
 }
-
 ?>
 <!doctype html>
 <html lang="en">
@@ -43,13 +56,16 @@ if(isset($_POST['submit'])){
               <label for="2nd_number" class="form-label">2nd Number</label>
               <input type="number" class="form-control 2nd_number" id="2nd_number" name="2nd_number" placeholder="Enter your secend number" required>
             </div>
-            <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+            <button type="submit" class="btn btn-success" name="addition">(+)addition</button>
+            <button type="submit" class="btn btn-danger" name="subtraction">(-)subtraction</button>
+            <button type="submit" class="btn btn-warning" name="multiply">(*)multiply</button>
+            <button type="submit" class="btn btn-primary" name="divide">(/)divide</button>
           </form>
           <!-- form end  -->
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container mt-5">
       <?php 
       echo "<H1>".$number3."</H1>";
       ?>
