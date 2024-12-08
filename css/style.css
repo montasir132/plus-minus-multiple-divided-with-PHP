@@ -1,0 +1,41 @@
+ /* font  */
+@import url(''); 
+
+
+/* common css start*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Fira Code", monospace;
+    background-color: #fff;
+}
+
+:root{
+    --black      : #1E1E1E;
+    --whith      : #FFFFFF;
+    --background : #282C33;
+    --gray       : #ABB2BF;
+    --primary    : #C778DD;
+    --fira: "Fira Code", monospace;
+}
+body{
+    font-family: ;
+    font-size: ;
+    font-weight: ;
+    background-color: ;
+    color: ;
+    line-height: ;
+}
+
+p{}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}    
+/* common css end*/
+/* header start  */
+/* header end */
